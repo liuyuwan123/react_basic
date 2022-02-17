@@ -99,6 +99,15 @@
                             })
                         }
                     </ul>
+                    <hr/>
+                    <hr/>
+                    <ul>
+                        {
+                            this.state.persons.map((personObj, index) => {
+                                return <li key={personObj.id}>{personObj.name}---{personObj.age}</li>
+                            })
+                        }
+                    </ul>
                 </div>
             )
         }
